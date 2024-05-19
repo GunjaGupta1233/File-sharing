@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Protected File Sharing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="dropzone">
+        <p class="instruction">Drop your file here</p>
+        <div id="passwordPrompt" class="popup hidden">
+            <label for="passwordInput">Set a password for the file:</label>
+            <input type="password" id="passwordInput" placeholder="Enter password">
+            <button id="setPasswordButton">Go</button>
+        </div>
+        <div id="shareLinkPrompt" class="popup hidden">
+            <p>Your share link:</p>
+            <input type="text" id="shareLink" readonly>
+            <button id="copyLinkButton">Copy Link</button>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; 2024 Password-Protected File Sharing</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/simple-peer/simplepeer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
