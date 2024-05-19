@@ -1,0 +1,72 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 50%;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.dragover {
+    border-color: #000;
+}
+
+.instruction {
+    font-size: 18px;
+    color: #666;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
+
+#footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+#passwordPrompt, #shareLinkPrompt {
+    display: none;
+}
+
+#passwordPrompt.hidden, #shareLinkPrompt.hidden {
+    display: none;
+}
+
+#shareLinkPrompt input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#copyLinkButton {
+    margin-top: 10px;
+}
